@@ -1,0 +1,691 @@
+/* ! PAGINA GENERALE */
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  text-decoration: none;
+  font-family: 'Inter', sans-serif;
+}
+
+
+
+/* ! BARRA MENU - FINITO */
+nav{
+  width: 100%;
+  height: 50px;
+}
+
+.menu{
+list-style: none;
+padding: 0 30px;
+background: white;
+}
+
+/* ccose generali  testo del menu */
+.menu li {
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 14px;
+  position: relative;
+}
+
+/* colore testo del menu */
+.menu li a {
+ display: block;
+ padding: 15px 30px;
+ text-decoration: none;
+ color: black;
+}
+
+/* colore testo appena passai sopra al menu */
+.menu a:hover {
+  color: black;
+}
+
+
+/* MEDIA QUERY TELEFONO */
+
+@media only screen and (max-width:768px) {
+
+.menu li{
+  font-size: 12px;
+}
+}
+
+
+
+/* ! PRIMA PAGINA */
+
+/* sfondo prima pagina */
+.hero{
+height: 96%;
+display: flex;
+width: 100%;
+align-items: center;
+background: url('DSC01255.JPG')no-repeat center center;
+background-size: cover;
+}
+
+/* dimensioni prima pagina*/
+.hero__content{
+  width: 100%;
+  max-width: 1350px;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+/* testo prima pagina */
+.hero__content h1{
+  color: white;
+  padding-bottom: 15px;
+}
+
+.button_1 {
+  padding: 10px;
+  background: white;
+  border-radius: 20px;
+  color : black;
+  text-decoration: none;
+
+}
+
+
+/* MEDIA QUERY TELEFONO */
+
+@media only screen and (max-width:768px) {
+
+.hero {
+height: 93%
+}
+
+.hero__content h1{
+  font-size: 30px;
+}
+.button_1{
+  padding: 7px;
+  border-radius: 13px;
+  font-size: 13px;
+}
+}
+
+
+
+
+/* ! PRESENTAZIONE*/
+
+.presentazione{
+  display: flex;
+  padding: 100px 0;
+  background: #DADBF3;
+  height: 900px;
+}
+
+.presentazione__img{
+  width: 60%;
+}
+
+.presentazione__img img{
+  width: 504px;
+  height: 672px;
+  margin-left: 300px;
+}
+
+.presentazione__content{
+  width: 40%;
+  margin-right: 200px;
+}
+
+.presentazione__content h1,p {
+  color : black;
+}
+
+
+
+/* MEDIA QUERY TELEFONO */
+
+@media only screen and (max-width:768px) {
+
+.presentazione{
+  height: 1170px;
+}
+
+.presentazione__img{
+  width: 10%;
+}
+
+.presentazione__img img{
+  margin-left: 180px;
+  margin-top: -80px;
+  width: 168px;
+  height: 224px;
+}
+
+.presentazione__content h1 {
+font-size: 40px;
+margin-top: -100px;
+padding-bottom: 50px;
+}
+
+.presentazione__content p {
+margin-right: -160px;
+}
+}
+
+
+
+/* LAVORI */
+
+/*! card - sfondo pagina lavori*/
+.work_1{
+  margin-top: 0;
+  height: 53%;
+  background: white;
+  width: 100%;
+  background: url('DSC01255.JPG')no-repeat center center;
+  background-size: cover;
+}
+
+/*! card - dimensioni carta lavoro*/
+.work {
+  width: 30%;
+  margin-top: 50px;
+  float: left;
+  background:  #FFF8F6;
+  max-width: 400px;
+  margin-left: 180px;
+  border-radius : 20px;
+  height: 565px;
+}
+
+/*! card - immagine lavoro*/
+.work__image{
+  display: block;
+  margin: 0 auto;
+  width: 36%;
+  height: 36%;
+}
+
+/*! card  - titolo lavoro*/
+.work__text{
+  padding: 20px 20px;
+}
+
+.work__text h3{
+ margin-bottom : 5px;
+ text-align: left;
+}
+
+.work__text p{
+  text-align: left;
+}
+
+.button_2 {
+  background: #DADBF3;
+  color: black;
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 15px;
+  margin-right: 20px;
+}
+
+.button_3 {
+  background: #DADBF3;
+  color: black;
+  padding: 10px;
+  text-decoration: none;
+  border-radius:15px;
+  margin-right: 20px;
+}
+
+.button_4 {
+  background: #DADBF3;
+  color: black;
+  padding: 10px;
+  text-decoration: none;
+  border-radius:15px;
+  text-decoration: none;
+}
+
+
+/* MEDIA QUERY TELEFONO */
+
+@media only screen and (max-width:768px) {
+
+
+.work_1{
+  height: 307%;
+}
+
+.work{
+  height:450px;
+  width: 310px;
+  margin-left: 30px;
+}
+
+.work__image{
+  width: 25%;
+  height: 25%;
+}
+
+.work__text h3{
+  font-size: 25px;
+}
+
+.work__text p{
+  font-size: 13.5px;
+}
+
+.button_2, .button_3, .button_4{
+  padding: 7px;
+  border-radius: 13px;
+  font-size: 15px;
+}
+
+}
+
+
+/* ! SKILLS */
+
+/*! Colore progress bar generals skills*/
+:root{
+    --color-red:#d75959;
+    --color-yellow:#f5c463;
+    --color-green:#9ccd7e;
+    --color-blue: #5ca7db;
+    --rgb-black:0,0,0;
+}
+
+/*! Sfondo contenitore generals skills*/
+.wrapper{
+    background: #DADBF3;
+    width: 100%;
+    height: 75%;
+}
+
+/*! Contenitore generals skills*/
+.container {
+  width: 100%;
+  padding: 30px 30px 50px;
+  background-color: white;
+  border-radius: 30px;
+  box-shadow: 0 20px 30px rgba(0,0,0,0.2);
+  position: relative;
+  top : 200px;
+  align-items: flex-end;
+  }
+
+  .progress-list {
+     margin: 0;
+     padding: 0;
+     list-style: none;
+  }
+
+  .progress-list li .line {
+     position: relative;
+  }
+  .progressbar:not(.circle) svg,
+  .progressbar:not(.circle) svg path {
+     border-radius: 20px;
+  }
+  .progressbar svg path:first-child {
+     stroke: rgba(var(--rgb-black), 0.09);
+  }
+  .progressbar.border {
+     border: 1px solid transparent;
+     box-sizing: border-box;
+  }
+  .progressbar.border svg path:first-child {
+     stroke: transparent;
+  }
+  .progressbar.line svg {
+     height: 5px;
+  }
+  .progressbar.line.border svg {
+     height: 4px;
+  }
+  .progressbar.circle {
+     position: relative;
+     margin: 0 auto 30px;
+  }
+  .progressbar.circle {
+     width: 170px;
+     height: 85px;
+  }
+
+  /*! Posizione process bar generals skills*/
+  .progressbar.circle .progressbar-text {
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     top: 0;
+     left: 0;
+     margin: 0;
+     font-size: 40px;
+     display: flex;
+     align-items: flex-end;
+     justify-content: center;
+     color: black !important;
+     font-weight: bold;
+  }
+
+  .progressbar.circle .progressbar-text:after {
+     content: "%";
+     display: block;
+     font-size: 20px;
+     padding-left: 2px;
+  }
+
+  .progressbar.red svg path:last-child {
+     stroke: var(--color-red)
+  }
+
+  .progressbar.yellow svg path:last-child {
+     stroke: var(--color-yellow)
+  }
+  .progressbar.green svg path:last-child {
+     stroke: var(--color-green)
+  }
+
+  .progressbar.blue svg path:last-child {
+     stroke: var(--color-blue)
+  }
+
+  /*! Titolo progress bar generals skills*/
+  h5{
+   background: transparent;
+   padding: 10px;
+   width: 75%;
+   margin: 0 auto;
+   border-radius: 50px;
+   border: 2px solid #ebebeb;
+   font-size: 17px;
+   color: white;
+   }
+
+  /*! Testo progress bar generals skills*/
+   p{
+    margin-top: 25px;
+  }
+
+
+
+  /* MEDIA QUERY TELEFONO */
+
+  @media only screen and (max-width:768px) {
+
+.wrapper {
+  height:200%;
+}
+
+.container {
+  width: 100%;
+  height: 80%;
+  padding: 30px 30px 50px;
+  border-radius: 30px;
+  position: relative;
+  top : 130px;
+  }
+
+
+h5{
+  padding: 5px;
+  width: 60%;
+}
+
+  }
+
+
+  /* ! FORM - FINITO */
+
+  /* ! sfondo form */
+.contact {
+  position: relative;
+  height: 1000px;
+  padding: 50px 100px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background: white;
+}
+
+  /* ! posizione contattaci - form */
+.content {
+  max-width: 700px;
+  text-align: center;
+  margin-top: -80px;
+  margin-bottom: 50px;
+}
+
+  /* ! titolo form */
+.content h2 {
+font-size: 36px;
+font-weight: 500;
+color : black;
+}
+
+  /* ! testo form */
+.content p{
+  font-weight: 500;
+  color : black;
+}
+
+/* ! posizione contenitore - form */
+.contenitore {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.contenitoreInfo {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+  /* ! posizione box - form */
+.box {
+  position: relative;
+  padding: 10px 0;
+  display: flex;
+}
+
+  /* ! icone form */
+.icon {
+  min-width: 60px;
+  height : 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #FFF8F6;
+  border-radius: 22px;
+}
+
+  /* ! testo box - form */
+.text {
+  display: flex;
+  margin-left: 20px;
+  font-size: 16px;
+  color : blacK;
+  flex-direction: column;
+  font-weight: 300;
+}
+
+  /* ! titolo box - form */
+.text h2 {
+  font-size: 23px;
+  color : #DADBF3 ;
+}
+
+
+
+
+  /* MEDIA QUERY TELEFONO */
+
+  @media only screen and (max-width:768px) {
+
+.contact {
+  height: 1200px;
+}
+
+.content {
+  margin-top: 20px;
+  margin-bottom: -550px;
+}
+
+.content p{
+ margin-left: -60px;
+ margin-right: -60px;
+ margin-bottom: 20px;
+ text-align: center;
+}
+
+
+.contenitore {
+  margin-top: 20px;
+}
+
+.text p {
+margin-right: -40px;
+}
+  }
+
+
+
+
+  /* ! posizione contactform - form */
+.contactForm {
+  width: 400px;
+  height : 545px;
+  padding: 40px;
+  background: #FFF8F6;
+}
+
+  /* ! titolo contactform - form */
+.contactForm h2 {
+  font-size: 25px;
+  color : black;
+}
+
+
+  /* ! barra bianca contactform (name e email)- form */
+input {
+  width: 300;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  border : 1px solid black;
+  border-radius: 3px;
+}
+
+  /* ! barra bianca contactform (messaggio)- form */
+textarea {
+  width: 300;
+  padding: 50px 0;
+  border : 1px solid black;
+  border-radius: 3px;
+}
+
+
+  /* ! tasto invio contactform - form */
+input[type="submit"]{
+  width: 100px;
+  background: #DADBF3;
+  color : black;
+  font-size: 15px;
+  border-radius: 10px;
+  border : 1px solid #FFF8F6;
+}
+
+
+
+  /* MEDIA QUERY TELEFONO */
+
+  @media only screen and (max-width:768px) {
+
+    .contactForm {
+      margin-top: 950px;
+      margin-left: -90px;
+      width: 360px;
+      height : 520px;
+    }
+
+  }
+
+
+
+
+
+  /* ! FOOTER - FINITO */
+
+/*! sfondo generale footer*/
+footer {
+  background: #FFF8F6;
+  height: 200px;
+  width: 100%;
+  padding-top: 40px;
+  color : black;
+}
+
+/*! disposizione generale footer */
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+/*! testo footer */
+.footer-content p{
+  margin: 10px auto;
+  line-height: 28px;
+}
+
+/*! disposizione icone social - footer */
+.socials {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.socials li{
+  margin: 0 10px;
+}
+
+/*! icone social - footer */
+.socials a{
+  text-decoration: none;
+  color: black;
+  font-size: 25px;
+}
+
+/*! quando passi sopra icone scocial - footer */
+.socials a:hover {
+  color: #DADBF3;
+  text-decoration: none;
+}
+
+/*! ultimo testo footer */
+.footer-bottom {
+  text-align: center;
+}
+
+.footer-bottom p{
+  word-spacing: 2px;
+  text-transform: capitalize;
+  margin-top: 50px;
+}
+
+.footer-bottom span{
+  text-transform: uppercase;
+  opacity : .4;
+  font-weight: 200;
+}

@@ -1,0 +1,640 @@
+/* ! PAGINA GENERALE */
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  text-decoration: none;
+  font-family: 'Inter', sans-serif;
+}
+
+
+
+/* ! BARRA MENU - finito! */
+
+.menu{
+list-style: none;
+width: 100%;
+padding: 0 30px;
+background: white;
+}
+
+/* ccose generali  testo del menu */
+.menu li {
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 14px;
+  position: relative;
+}
+
+/* colore testo del menu */
+.menu li a {
+ display: block;
+ padding: 15px 30px;
+ text-decoration: none;
+ color: black;
+}
+
+/* colore testo appena passai sopra al menu */
+.menu a:hover {
+  color: black;
+}
+
+
+
+/* MEDIA QUERY TELEFONO */
+
+@media only screen and (max-width:768px) {
+
+.menu li{
+  font-size: 12px;
+}
+}
+
+
+/* carosello 2*/
+
+/* Dimensioni pagina*/
+#slider_2 {
+  height: 750px;
+  justify-content: center;
+  align-items: center;
+  padding: 70px;
+  padding-right: 130px;
+  background: #DADBF3;
+  display: flex;
+}
+
+/* Disposizione testo*/
+.container {
+  width: 100%;
+  margin: auto;
+}
+
+.subcontainer {
+  width: 85%;
+  margin: auto;
+}
+
+.controller {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Dimensione immagine*/
+.slide-img_2 {
+  width: 437px;
+  height: 637px;
+  background-size: cover;
+  transition: 0.8s;
+  padding-left: 40px;
+  background-position: center;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 30px;
+}
+
+/* Chiusura immagine*/
+.slide-img_2:hover {
+  box-shadow: 0 0 0 400px rgba(0,0,0, 0.8) inset;
+}
+
+/* Testo quando clicchi dentro immagine*/
+.slide-img_2 a{
+  text-decoration: none;
+  transform: scale(0);
+  padding: 250px;
+  transition: 0.8s;
+  font-size: 30px;
+  color: white;
+  opacity: 0;
+}
+
+.slide-img_2:hover a {
+  opacity: 3;
+  transform: scale(1)
+}
+
+/* Immmagini*/
+.img-5{
+  background-image: url('DSC00864.JPG');
+}
+
+.img-6{
+  background-image: url('DSC00906.JPG');
+}
+
+.img-7{
+  background-image: url('DSC00808.JPG');
+}
+.img-8{
+  background-image: url('DSC00788.JPG');
+}
+
+.img-9{
+  background-image: url('DSC01187.JPG');
+}
+
+
+
+/* MEDIA QUERY TELEFONO */
+
+@media only screen and (max-width:768px) {
+
+#slider_2{
+  height: 2200px;
+  display: flex;
+  flex-direction: column;
+}
+
+.slide-img_2 {
+  width: 286px;
+  height: 424px;
+  margin-left: 60px;
+}
+
+}
+
+
+/* carosello 1*/
+
+/* Dimensioni pagina*/
+#slider {
+  height: 550px;
+  justify-content: center;
+  align-items: center;
+  padding: 70px;
+  background: #DADBF3;
+  display: flex;
+}
+
+/* Disposizione testo*/
+.container {
+  width: 100%;
+  margin: auto;
+}
+
+.subcontainer {
+  width: 85%;
+  margin: auto;
+}
+
+.controller {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Dimensione immagine*/
+.slide-img {
+  width: 637px;
+  height: 437px;
+  background-size: cover;
+  transition: 0.5s;
+  background-position: center;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Chiusura immagine*/
+.slide-img:hover {
+  box-shadow: 0 0 0 400px rgba(0,0,0, 0.8) inset;
+}
+
+/* Testo quando clicchi dentro immagine*/
+.slide-img a{
+  text-decoration: none;
+  transform: scale(0);
+  transition: 0.8s;
+  font-size: 30px;
+  color: white;
+  opacity: 0;
+}
+
+.slide-img:hover a {
+  opacity: 3;
+  transform: scale(1)
+}
+
+/* Immmagini*/
+.img-1{
+  background-image: url('DSC01438.jpg');
+}
+
+.img-2{
+  background-image: url('DSC01056.jpg');
+}
+
+.img-3{
+  background-image: url('DSC01351.jpg');
+}
+.img-4{
+  background-image: url('IMG_2895.jpg');
+}
+
+
+
+  /* MEDIA QUERY TELEFONO */
+
+  @media only screen and (max-width:768px) {
+
+  #slider{
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .slide-img {
+    width: 325px;
+    height: 186px;
+    margin-left: 2px;
+  }
+
+  }
+
+
+
+
+/* carosello 3*/
+
+/* Dimensioni pagina*/
+#slider_3 {
+  height: 800px;
+  justify-content: center;
+  align-items: center;
+  padding: 70px;
+  padding-right: 130px;
+  background: #DADBF3;
+  display: flex;
+}
+
+/* Disposizione testo*/
+.container {
+  width: 100%;
+  margin: auto;
+}
+
+.subcontainer {
+  width: 85%;
+  margin: auto;
+}
+
+.controller {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Dimensione immagine*/
+.slide-img_3 {
+  width: 437px;
+  height: 637px;
+  background-size: cover;
+  transition: 0.8s;
+  padding-left: 40px;
+  background-position: center;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 30px;
+}
+
+/* Chiusura immagine*/
+.slide-img_3:hover {
+  box-shadow: 0 0 0 400px rgba(0,0,0, 0.8) inset;
+}
+
+/* Testo quando clicchi dentro immagine*/
+.slide-img_3 a{
+  text-decoration: none;
+  transform: scale(0);
+  padding: 250px;
+  transition: 0.8s;
+  font-size: 30px;
+  color: white;
+  opacity: 0;
+}
+
+.slide-img_3:hover a {
+  opacity: 3;
+  transform: scale(1)
+}
+
+/* Immmagini*/
+.img-10{
+  background-image: url('IMG_6079.JPG');
+}
+
+.img-11{
+  background-image: url('IMG_5957.JPG');
+}
+
+.img-12{
+  background-image: url('IMG_5967.JPG');
+}
+.img-13{
+  background-image: url('IMG_6099.JPG');
+}
+
+.img-14{
+  background-image: url('IMG_5370.JPG');
+}
+
+
+
+/* MEDIA QUERY TELEFONO */
+
+@media only screen and (max-width:768px) {
+
+#slider_3{
+  height: 2200px;
+  display: flex;
+  flex-direction: column;
+}
+
+.slide-img_3 {
+  width: 286px;
+  height: 424px;
+  margin-left: 60px;
+}
+
+}
+
+/* carosello 4*/
+
+/* Dimensioni pagina*/
+#slider_4 {
+  height: 500px;
+  justify-content: center;
+  align-items: center;
+  padding: 70px;
+  background: #DADBF3;
+  display: flex;
+}
+
+/* Disposizione testo*/
+.container {
+  width: 100%;
+  margin: auto;
+}
+
+.subcontainer {
+  width: 85%;
+  margin: auto;
+}
+
+.controller {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Dimensione immagine*/
+.slide-img_4 {
+  width: 637px;
+  height: 437px;
+  background-size: cover;
+  transition: 0.8s;
+  background-position: center;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Chiusura immagine*/
+.slide-img_4:hover {
+  box-shadow: 0 0 0 400px rgba(0,0,0, 0.8) inset;
+}
+
+/* Testo quando clicchi dentro immagine*/
+.slide-img_4 a{
+  text-decoration: none;
+  transform: scale(0);
+  padding: 250px;
+  transition: 0.8s;
+  font-size: 30px;
+  color: white;
+  opacity: 0;
+}
+
+.slide-img_4:hover a {
+  opacity: 3;
+  transform: scale(1)
+}
+
+/* Immmagini*/
+.img-15{
+  background-image: url('DSC01576.JPG');
+}
+
+.img-16{
+  background-image: url('DSC00807.JPG');
+}
+
+.img-17{
+  background-image: url('DSC00657.JPG');
+}
+.img-18{
+  background-image: url('DSC01569.JPG');
+}
+
+
+
+  /* MEDIA QUERY TELEFONO */
+
+  @media only screen and (max-width:768px) {
+
+  #slider_4{
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .slide-img_4 {
+    width: 325px;
+    height: 186px;
+    margin-left: 2px;
+  }
+
+  }
+
+
+/* carosello 4*/
+
+/* Dimensioni pagina*/
+#slider_5 {
+  height: 800px;
+  justify-content: center;
+  align-items: center;
+  padding: 70px;
+  padding-right: 130px;
+  background: #DADBF3;
+  display: flex;
+}
+
+/* Disposizione testo*/
+.container {
+  width: 100%;
+  margin: auto;
+}
+
+.subcontainer {
+  width: 85%;
+  margin: auto;
+}
+
+.controller {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Dimensione immagine*/
+.slide-img_5 {
+  width: 437px;
+  height: 637px;
+  background-size: cover;
+  transition: 0.8s;
+  padding-left: 40px;
+  background-position: center;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 30px;
+}
+
+/* Chiusura immagine*/
+.slide-img_5:hover {
+  box-shadow: 0 0 0 400px rgba(0,0,0, 0.8) inset;
+}
+
+/* Testo quando clicchi dentro immagine*/
+.slide-img_5 a{
+  text-decoration: none;
+  transform: scale(0);
+  padding: 250px;
+  transition: 0.8s;
+  font-size: 30px;
+  color: white;
+  opacity: 0;
+}
+
+.slide-img_5:hover a {
+  opacity: 3;
+  transform: scale(1)
+}
+
+/* Immmagini*/
+.img-19{
+  background-image: url('DSC01057.jpg');
+}
+
+.img-20{
+  background-image: url('DSC01135 pt2 .jpg');
+}
+
+.img-21{
+  background-image: url('DSC01103.jpg');
+}
+
+.img-22{
+  background-image: url('DSC01256 pt.2.jpg');
+}
+
+.img-23{
+  background-image: url('DSC01392.jpg');
+}
+
+  /* MEDIA QUERY TELEFONO */
+
+  @media only screen and (max-width:768px) {
+
+  #slider_5{
+    height: 2200px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .slide-img_5 {
+    width: 286px;
+    height: 424px;
+    margin-left: 60px;
+  }
+
+  }
+
+
+
+    /* ! FOOTER - FINITO */
+
+  /*! sfondo generale footer*/
+  footer {
+    background: #FFF8F6;
+    height: 200px;
+    width: 100%;
+    padding-top: 40px;
+    color : black;
+  }
+
+  /*! disposizione generale footer */
+  .footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  /*! testo footer */
+  .footer-content p{
+    margin: 10px auto;
+    line-height: 28px;
+  }
+
+  /*! disposizione icone social - footer */
+  .socials {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .socials li{
+    margin: 0 10px;
+  }
+
+  /*! icone social - footer */
+  .socials a{
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+  }
+
+  /*! quando passi sopra icone scocial - footer */
+  .socials a:hover {
+    color: #DADBF3;
+    text-decoration: none;
+  }
+
+  /*! ultimo testo footer */
+  .footer-bottom {
+    text-align: center;
+  }
+
+  .footer-bottom p{
+    word-spacing: 2px;
+    text-transform: capitalize;
+    margin-top: 50px;
+  }
+
+  .footer-bottom span{
+    text-transform: uppercase;
+    opacity : .4;
+    font-weight: 200;
+  }
